@@ -1,0 +1,33 @@
+import java.util.*;
+import java.util.Map.Entry;
+
+import com.sun.javafx.collections.MappingChange.Map;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 HashMap<Integer, String> hashmap = new HashMap<Integer, String>();
+         hashmap.put(1, "Sandeep");
+		 hashmap.put(2, "chitti");
+		 hashmap.put(3, "sudheer");
+		 hashmap.put(4, "kiriti");
+		 hashmap.put(5, "arun");
+		 hashmap.put(6, "Srinivas");
+         for(Entry<Integer, String> m:hashmap.entrySet()){    
+	          System.out.println(m.getKey()+" "+m.getValue());    
+	         }  
+	     String var=hashmap.get(4);
+	      System.out.println(var);
+	      hashmap.remove(1);
+	      System.out.println("after remove:");
+
+	      for(Entry<Integer, String> m:hashmap.entrySet()){    
+	          System.out.println(m.getKey()+" "+m.getValue());    
+	         }  
+
+	   }
+
+	}
+
+
