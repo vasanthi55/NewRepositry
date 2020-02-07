@@ -1,0 +1,28 @@
+import java.util.Hashtable;
+
+public class HashTable {
+
+	public static void main(String[] args) {
+		Hashtable<Integer, String> hashmap = 
+                new Hashtable<Integer, String>(); 
+
+  Hashtable<Integer, String> hashmap1 = 
+                new Hashtable<Integer, String>(); 
+
+  hashmap.put(3, "sandeep"); 
+  hashmap.put(2, "chitti"); 
+  hashmap.put(1, "gowtham"); 
+
+  hashmap = (Hashtable<Integer, String>)hashmap.clone(); 
+  // checking clone h1 
+  System.out.println("values in clone: " + hashmap1); 
+
+  // clear hash table h 
+  hashmap.clear(); 
+
+  // checking hash table h 
+  System.out.println("after clearing: " + hashmap); 
+
+	}
+
+}
