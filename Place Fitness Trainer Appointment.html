@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <style>
+  table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.form-group
+{
+  padding: 1px;
+}
+#identity
+{
+   padding: 1px;
+}
+.address
+{
+  width: 900px;
+}
+#identity1
+{
+  padding: 20px;
+}
+
+</style>
+ 
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+<body background="fittness.JPG">
+
+<div class="container">
+
+<form action="/action_page.php">
+  <div class="form-group">
+<div class="row">
+<div class="col-sm-4">
+   <label for="firstname">FirstName:</label>
+  <input type="text" class="form-control" name="firstname">  
+</div>
+<div class="col-sm-4">
+<label for="Lasstname">Last name</label>
+  <input type="text"  class="form-control" name="Lasstname">
+ <br>
+</div>
+</div>
+ <div class="form-group" id="identity">
+<div class="row">
+<div class="col-sm-4">
+  <label for="age">  Age:</label>
+ <input type="text" class="form-control" name="age">
+</div>
+<div class="col-sm-4">
+   <label for="Email">Email:</label>
+<input type="text" class="form-control" name="Email">
+</div>
+<div class="col-sm-4">
+ <label for="Phone">Phone:</label>
+ <select >
+  <option value="code">+91</option>
+  <option value="code">+26</option>
+  <option value="code">+28</option>
+  <option value="code">+42</option>
+</select>
+ <input type="text"   name="numb" style="width:20px;">
+<input type="text"   name="numb" style="width:20px;">
+<input type="text"  name="numb" style="width:20px;">
+<input type="text"  name="numb" style="width:20px;">
+<input type="text"  name="numb" style="width:20px;">
+<input type="text"  name="numb" style="width:20px;">
+<input type="text"  name="numb" style="width:20px;">
+<input type="text"  name="numb" style="width:20px;">
+<input type="text"  name="numb" style="width:20px;">
+<input type="text" name="numb" style="width:20px;">
+</div>
+ <div>
+<div class="container">
+  <div class="form-group" id="identity1">
+ <fieldset class="address">
+  <legend> <label for="Address">Address</label></legend>
+ <label for="Street Address">Street Address:</label><br>
+  <input type="text" class="form-control" name="address">
+<div class="row">
+<div class="col-sm-4">
+  <label for="City:">City:</label>
+<input type="text" class="form-control"> City 
+</div>
+<div class="col-sm-4">
+ <label for="State:">State:</label>
+ <input type="text" class="form-control"> State  
+</div>
+<div class="col-sm-4">
+ <label for=" Country:"> Country:</label>
+ <select id="Country">
+  <option value="India">India</option>
+  <option value="China">China</option>
+  <option value="America">America</option>
+  <option value="Russia">Russia</option>
+</select>
+</div>
+</div>
+</div>
+ <label for=" Pincode">Pincode</label>
+<input type="text" class="form-control" style="width:100px;" name="Pincode"><br>
+
+ </fieldset>
+</div>
+</div>
+<div class="form-group">
+ Trainer Preference:<br>
+  <input type="radio"  name="Trainer" value="Male Trainer">Male Trainer<br>
+  <input type="radio"  name="Trainer" value="Female Trainer"> Female Trainer<br>
+  <input type="radio"  name="Trainer" value="No Preference"> No Preference<br>
+    <input type="radio"   name="Trainer" value="Trainers Name"> No Preference  <input type="text" name="Trainers Name" placeholder="Trainers"><br> 
+      <input type="radio"  name="Trainer" value="Others">Others <input type="text" name="Others" placeholder="Others"><br> 
+    </div>
+    <div class="form-group">
+      Do you need physiotherapist?:<br>
+      <input type="radio"  name="Physiotherapist" value="Yes">Yes
+  <input type="radio"  name="Physiotherapist" value="No">No<br>
+</div>
+ <div class="form-group"> 
+<label for="Appointment"> Appointment:(Free)</label><br>
+ <table class="table table-hover">
+  <tr class="info">
+    <th>Day</th>
+    <th>7am to 9am</th>
+    <th>9am to 11am</th>
+    <th>11am to 1pm</th>
+    <th>1pm to 3pm</th>
+    <th>3pm to 5pm</th>
+  </tr>
+  <tr class="warning">
+    <td>Monday</td>
+    <td> <input type="radio"  name="7to9am" value="7 to 9am">1</td>
+    <td> <input type="radio"  name="9to11am" value="9 to 11am">2</td>
+    <td> <input type="radio"  name="11amto1pm" value="11am to 1pm">3</td>
+    <td> <input type="radio"  name="1pmto3pm" value="1pm to 3pm">4</td>
+    <td> <input type="radio"  vname="3pmto5pm" value="3pmto5pm">5</td>
+  </tr>
+ <tr class="warning">
+    <td>Tuesday</td>
+   <td> <input type="radio"  name="7to9am" value="7 to 9am">1</td>
+    <td> <input type="radio"  name="9to11am" value="9 to 11am">2</td>
+    <td> <input type="radio"  name="11amto1pm" value="11am to 1pm">3</td>
+    <td> <input type="radio" name="1pmto3pm" value="1pm to 3pm">4</td>
+    <td> <input type="radio"  name="3pmto5pm" value="3pmto5pm">5</td>
+  </tr>
+ <tr class="warning">
+    <td>Wednesday</td>
+    <td> <input type="radio"  name="7to9am" value="7 to 9am">1</td>
+    <td> <input type="radio"  name="9to11am" value="9 to 11am">2</td>
+    <td> <input type="radio"  name="11amto1pm" value="11am to 1pm">3</td>
+    <td> <input type="radio"  name="1pmto3pm" value="1pm to 3pm">4</td>
+    <td> <input type="radio"  name="3pmto5pm" value="3pmto5pm">5</td>
+  </tr>
+  <tr class="warning">
+    <td>Thursday</td>
+   <td> <input type="radio" name="7to9am" value="7 to 9am">1</td>
+    <td> <input type="radio"  name="9to11am" value="9 to 11am">2</td>
+    <td> <input type="radio"  name="11amto1pm" value="11am to 1pm">3</td>
+    <td> <input type="radio"  name="1pmto3pm" value="1pm to 3pm">4</td>
+    <td> <input type="radio"  name="3pmto5pm" value="3pmto5pm">5</td>
+  </tr>
+ <tr class="warning">
+    <td>Friday</td>
+    <td> <input type="radio"  name="7to9am" value="7 to 9am">1</td>
+    <td> <input type="radio"  name="9to11am" value="9 to 11am">2</td>
+    <td> <input type="radio"  name="11amto1pm" value="11am to 1pm">3</td>
+    <td> <input type="radio"  name="1pmto3pm" value="1pm to 3pm">4</td>
+    <td> <input type="radio" name="3pmto5pm" value="3pmto5pm">5</td>
+  </tr> 
+ <tr class="warning">
+    <td>Saturday</td>
+    <td> <input type="radio" name="7to9am" value="7 to 9am">1</td>
+    <td> <input type="radio"  name="9to11am" value="9 to 11am">2</td>
+    <td> <input type="radio"  name="11amto1pm" value="11am to 1pm">3</td>
+    <td> <input type="radio"  name="1pmto3pm" value="1pm to 3pm">4</td>
+    <td> <input type="radio"  name="3pmto5pm" value="3pmto5pm">5</td>
+  </tr>
+   <tr class="warning">
+    <td>Sunday</td>
+    <td> <input type="radio" name="7to9am" value="7 to 9am">1</td>
+    <td> <input type="radio"  name="9to11am" value="9 to 11am">2</td>
+    <td> <input type="radio"  name="11amto1pm" value="11am to 1pm">3</td>
+    <td> <input type="radio"  name="1pmto3pm" value="1pm to 3pm">4</td>
+    <td> <input type="radio"  name="3pmto5pm" value="3pmto5pm">5</td>
+  </tr>
+  </table>
+ </div>
+  <div class="form-group">
+<label for="Package"> Select a Package:</label><br>
+  <br>
+<input type="radio"  name="Package" value="one time assessment only">one time assessment only  (INR 500)<br>
+  <input type="radio" name="Package" value="4 weekly sessions">4 weekly sessions      (INR 500/session)<br>
+  <input type="radio"  name="Package" value="12 weeklysessions">12 weeklysessions      (INR 300/session)<br>
+    <input type="radio"  name="Package" value="Other">Other  <input type="text"  placeholder="Other"><br> 
+    Quote:
+    <div class="row">
+<div class="col-sm-1">
+  <input type="text" class="form-control" name="Amount"><br>INR </div>.<div class="col-sm-1"><input type="text" class="form-control" name="Amount"> <br>Paise</div>
+</div>
+<br>
+     </div>
+</div>
+<div align="center">
+  <button type="submit" " class="btn btn-dark">Submit</button>
+</div>
+</form> 
+
+
+</body>
+</html>
